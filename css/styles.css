@@ -15,6 +15,7 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
@@ -51,11 +52,10 @@ body {
 }
 
 .nav-menu .page:hover,
-.nav-menu .page:focus {
-  color: var(--accent-color);
-}
-
-.nav-menu .page.current {
+.nav-menu .page:focus,
+.nav-menu .page.current,
+.contacts-menu .item:hover,
+.contacts-menu .item:focus {
   color: var(--accent-color);
 }
 
@@ -66,11 +66,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-}
-
-.contacts-menu .item:hover,
-.contacts-menu .item:focus {
-  color: var(--accent-color);
 }
 
 /* Footer section */
@@ -95,8 +90,6 @@ body {
 
 /* Buttons */
 .button {
-  background-color: var(--primary-white-color);
-  color: var(--primary-black-color);
   border-color: transparent;
   font-family: inherit;
   letter-spacing: 0.03em;
@@ -126,7 +119,8 @@ body {
 }
 
 .button.filter:hover,
-.button.filter:focus {
+.button.filter:focus,
+.button.filter.current {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -165,7 +159,6 @@ body {
 }
 
 .benefits .description {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -176,18 +169,16 @@ body {
   background-color: var(--background-grey);
 }
 
-.team .name {
-  color: var(--primary-black-color);
-  font-weight: 500;
+.team .name,
+.team .position {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 
-.team .position {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+.team .name {
+  color: var(--primary-black-color);
+  font-weight: 500;
 }
 
 /* Portfolio page */
